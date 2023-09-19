@@ -1,0 +1,29 @@
+* {
+    flex: 10%;
+}
+/* navigation bar styles */
+
+header {
+    display: flex;
+    justify-content:right;
+    padding: 2%;
+    background-color: #d61010;
+}
+
+.navigation-bar-link a {
+    color: #dbdbdb;
+    
+    transition: color 0.5s;
+}
+
+
+nav:hover {
+    color: #a23fff;
+    text-decoration: underline solid #a23fff;
+    text-decoration: none;
+}
+
+h1 {
+    color: #dbdbdb;
+    float: left;
+}
