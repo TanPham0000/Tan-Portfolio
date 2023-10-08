@@ -3,6 +3,7 @@
   <defs>
     <style>
       .cls-1 {
+        fill: #f2f2f2;
         font-family: Broadway, Broadway;
         font-size: 200px;
       }
