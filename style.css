@@ -78,7 +78,7 @@ main {
 }
 
 .launch {
-  background-image: url(mongolia.jpg);
+  background-image: url(img/mongolia.jpg);
   background-size:cover;
   background-position: center;
   background-attachment:fixed;
@@ -95,7 +95,7 @@ main {
 }
  
 .displatebanner {
-  background-image: url(displaterosterbanner.jpg);
+  background-image: url(img/displaterosterbanner.jpg);
   padding-top: 10%;
   padding-bottom: 10%;
   height: 40em;
