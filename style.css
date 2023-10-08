@@ -1,102 +1,176 @@
+/* home base*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Philosopher&display=swap');
 * {
-    box-sizing: border-box;
-    flex: 5%;
-    font-family: monospace;
-    font-style: normal;
+  box-sizing: border-box;
+  flex: 5%;
+  font-family: 'Barlow', sans-serif !important;
+  color: var(--text);
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  
+  /*colour section */ 
+  --text: #eae9fc;
+  --background: #181717;
+  --primary: #8731d8;
+  --secondary: #120024;
+  --accent: #c200bb;
 }
 
-/* gallery */
-main {
-    margin-left: 5%;
-    margin-right: 5%;
-}
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .header {
-    text-align: center;
-    padding: 32px;
-  }
-  
-  .row {
-   
-    display: flex;
-
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create two equal columns that sits next to each other */
-  .column {
-    flex: 50%;
-    padding: 0 5px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
 /* navigation bar styles */
 
 header {
-    display: flex;
-    padding: 2%;
-    background-color: #d61010;
+  height: 50px;
+  width: 100%;
+  background-color: var(--secondary);
 }
 
-nav{
-    color: #dbdbdb;
+nav {
+  display: inline-block;
+  align-items: center;
+  color: var(--text);
+  width: 100%;
+  margin: auto;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  float: left;
 }
 
 ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    overflow: hidden;
-    background-color: #d3f8d5;
-    text-align: center;
-    padding: 1em;
-
+  display: flex;
+  list-style: none;
+  overflow: hidden;
+  background-color: var(--background);
+  text-align: center;
 }
 
-.navbuttons {
-    display: block;
-    justify-content: center;
-    color: #e9760a;
-    text-decoration: none;
-    padding: 14px 16px;
-}
-
-.navbuttons:hover {
-    color: #d61010;
-    text-decoration: none;
-}
-
-a {
-    background-color: aqua;
-}
-a:hover {
-    color: #dbdbdb;
-    background-color: #10d61a;
-}
-
-/* main and h1 styles */
+/* text styles */
 
 h1 {
-    color: #dbdbdb;
-    font-weight: bold;
-    font-size: 3em;
+  font-weight: bolder;
+  font-size: 50px;
+  text-align: center;
 }
 
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+p {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* Hero */
+
 main {
-    background-color: #caca10;
+  display: flex;
+  justify-content: center;
+}
+
+.launch {
+  background-image: url(img/neom-AdkJ-LgpTrE-unsplash.jpg);
+  background-size:cover;
+  background-position: center;
+  background-attachment:fixed;
+  height: 85vh;
+  width: 100%;
+}
+
+.copy {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+.displatebanner {
+  background-image: url(img/Displate\ roster\ banner.jpg);
+  display: inline-block;
+  height: 40em;
+  width: 100%;
+}
+
+/* gallery */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+}
+
+img {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 33%;
+  padding: 0 5px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1)
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* interactie a */
+
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1em;
+  background-color: var(--primary);
+}
+
+a:hover {
+  background-color: var(--accent);
+  padding: 1em;
+}
+
+li:hover {
+  color:var(--primary);
+  text-decoration: none;
+  text-shadow: 0 0 12px #ffffff;
+}
+
+/* Sections Articles */
+
+section {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+article {
+  display: flex;
+  background-color: var(#181717c4);
+  height: 200px;
+  text-align: center center;
+  position:relative;
+  width: 100%;
 }
 
 footer {
-    background-color: #10d61a;
-    display: flex;
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--secondary);
 }
-
-/* img */
